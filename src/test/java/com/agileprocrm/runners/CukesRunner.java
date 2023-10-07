@@ -10,12 +10,13 @@ import org.junit.runner.RunWith;
             plugin= {"pretty",
                     "html:target/cucumber-reports.html",
                     "rerun:target/rerun.txt",
-                    "me.jvt.cucumber.report.PrettyReports:target/cucumber"
+                    "me.jvt.cucumber.report.PrettyReports:target/cucumber",
+                    "json:target/cucumber.json"
             },
             features = "src/test/resources/features",
             glue =  "com/agileprocrm/step_definitions",
             dryRun = false,
-            tags = "@drive",
+            tags = "@SCRUM-1267",
             //kimi istiyorsak onun tag ini yazalım
 
             //and olunca 2 koşul da sağlanmalı sağlanmıyorsa çalışmaz
